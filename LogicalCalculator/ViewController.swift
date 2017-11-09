@@ -35,6 +35,7 @@ class ViewController: UIViewController {
             first = true
         }
         label.text = "True"
+        alpha()
     }
     
     @IBAction func clickedFalse(_ sender: UIButton) {
@@ -44,27 +45,31 @@ class ViewController: UIViewController {
             first = false
         }
         label.text = "False"
+        alpha()
     }
     
     @IBAction func clickedEqual(_ sender: UIButton) {
         operation = "Equal"
         label.text = "=="
-        
+        alpha()
     }
     
     @IBAction func clickedNotEqual(_ sender: UIButton) {
         operation = "Not Equal"
         label.text = "!="
+        alpha()
     }
     
     @IBAction func clickedAnd(_ sender: UIButton) {
         operation = "And"
         label.text = "&"
+        alpha()
     }
     
     @IBAction func clickedOr(_ sender: UIButton) {
         operation = "Or"
         label.text = "|"
+        alpha()
     }
     
     @IBAction func clickedClear(_ sender: UIButton) {
@@ -72,11 +77,11 @@ class ViewController: UIViewController {
         first = nil
         second = nil
         operation = nil
-        label.alpha = 1
+        alpha()
     }
     
     @IBAction func clickedResult(_ sender: UIButton) {
-        label.alpha = 0.5
+        label.alpha = 0.6
         if operation == "Equal" {
             label.text = first == second ? "true" : "false"
         } else if operation == "Not Equal" {
@@ -101,6 +106,10 @@ class ViewController: UIViewController {
         first = nil
         second = nil
         operation = nil
+    }
+    
+    func alpha() {
+        label.alpha = 1
     }
     
 }
