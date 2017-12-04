@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B74BAEB61FD5DC6700793258 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B74BAEB51FD5DC5900793258 /* libsqlite3.tbd */; };
 		B770B47E1FB386AC007F8E7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B770B47D1FB386AC007F8E7D /* AppDelegate.swift */; };
 		B770B4801FB386AC007F8E7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B770B47F1FB386AC007F8E7D /* ViewController.swift */; };
 		B770B4831FB386AC007F8E7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B770B4811FB386AC007F8E7D /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B74BAEB31FD5DA7700793258 /* LogicalCalculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicalCalculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		B74BAEB51FD5DC5900793258 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B770B47A1FB386AC007F8E7D /* LogicalCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogicalCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B770B47D1FB386AC007F8E7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B770B47F1FB386AC007F8E7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +32,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74BAEB61FD5DC6700793258 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B74BAEB41FD5DC5800793258 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B74BAEB51FD5DC5900793258 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B770B4711FB386AC007F8E7D = {
 			isa = PBXGroup;
 			children = (
 				B770B47C1FB386AC007F8E7D /* LogicalCalculator */,
 				B770B47B1FB386AC007F8E7D /* Products */,
+				B74BAEB41FD5DC5800793258 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,7 @@
 				B770B4841FB386AC007F8E7D /* Assets.xcassets */,
 				B770B4861FB386AC007F8E7D /* LaunchScreen.storyboard */,
 				B770B4891FB386AC007F8E7D /* Info.plist */,
+				B74BAEB31FD5DA7700793258 /* LogicalCalculator-Bridging-Header.h */,
 			);
 			path = LogicalCalculator;
 			sourceTree = "<group>";
@@ -275,11 +289,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YTNY3D3G85;
 				INFOPLIST_FILE = LogicalCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kalvia.LogicalCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/dsuskevic/Desktop/Mokslai/LogicalCalculator/LogicalCalculator/LogicalCalculator-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YTNY3D3G85;
 				INFOPLIST_FILE = LogicalCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
